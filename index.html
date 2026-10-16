@@ -70,7 +70,7 @@ a{color:var(--ac)}
 <div class="row" style="margin-top:10px"><button class="b" onclick="lg.close()">취소</button><button class="b p" id="go">로그인</button></div></dialog>
 <script>
 /* ===== 설정: Supabase 값을 넣으면 실제 운영 모드, 비워두면 체험(데모) 모드 ===== */
-const CFG={url:'',key:'',councilEmail:'council@ddhs.example.com'}; // councilEmail = Supabase에 만든 학생회 계정 이메일 (화면에는 안 보임)
+const CFG={url:'https://hlywndogyionugufneux.supabase.co',key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhseXduZG9neWlvbnVndWZuZXV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxMjA1NTksImV4cCI6MjEwNzY5NjU1OX0.bYZsdhis4uKoQ-onn8WSAlVEC_8A2C9gVwY7kYo033E',councilEmail:'25s013@dodam.hs.kr'};
 const HASH='bc4d437687477ba37e3452beaacc3ed839d138a30b247dd1315ff5204762807d'; // 데모 모드 비밀번호 해시
 const DEMO=!CFG.url, MAIL='25s013@dodam.hs.kr';
 const TABS=[['books','추천도서'],['lib','학습자료실'],['timer','스터디 타이머']];
