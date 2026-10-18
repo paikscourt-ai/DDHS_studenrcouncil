@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>도담고등학교 아카이브</title>
+<style>
+:root{--bg:#f4f6fb;--tx:#1c1c1e;--mu:#6b7280;--gl:rgba(255,255,255,.58);--bd:rgba(255,255,255,.85);--ac:#0a84ff;--sh:rgba(40,60,120,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141a;--tx:#f2f2f7;--mu:#9ca3af;--gl:rgba(255,255,255,.08);--bd:rgba(255,255,255,.16);--sh:rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12141a;--tx:#f2f2f7;--mu:#9ca3af;--gl:rgba(255,255,255,.08);--bd:rgba(255,255,255,.16);--sh:rgba(0,0,0,.4);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;text-align:center;color:var(--tx);font-family:-apple-system,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",system-ui,sans-serif;background:radial-gradient(60% 40% at 10% 0%,rgba(120,180,255,.35),transparent),radial-gradient(50% 40% at 100% 10%,rgba(255,190,220,.3),transparent),radial-gradient(60% 40% at 50% 100%,rgba(170,240,220,.3),transparent),var(--bg);background-attachment:fixed}
+.w{max-width:860px;margin:0 auto;padding:16px}
+.g{background:var(--gl);-webkit-backdrop-filter:blur(26px) saturate(180%);backdrop-filter:blur(26px) saturate(180%);border:1px solid var(--bd);border-radius:26px;box-shadow:0 10px 34px var(--sh),inset 0 1px 0 rgba(255,255,255,.9)}
+header{padding:20px;margin-bottom:12px}
+h1{font-size:22px;margin:0;letter-spacing:-.3px}h1 small{display:block;font-size:11px;letter-spacing:3px;color:var(--mu);font-weight:600;margin-top:2px}
+button,input,textarea,select{font:inherit;color:inherit}
+.b{border:1px solid var(--bd);background:var(--gl);border-radius:999px;padding:8px 16px;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.8);transition:transform .15s,box-shadow .2s,background .2s}
+.b:hover{transform:translateY(-1px);box-shadow:0 4px 14px var(--sh),inset 0 1px 0 rgba(255,255,255,.8)}
+button:active{transform:scale(.95)!important}
+.b.p{background:var(--ac);color:#fff;border-color:transparent}
+.b.x{padding:4px 10px;font-size:12px;color:#e5484d;margin-top:8px}
+#lb{margin-top:12px}
+.pop{animation:pop .45s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:scale(.85)}100%{transform:scale(1)}}
+.fi{animation:up .38s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#dd{display:flex;gap:10px;overflow-x:auto;padding:14px;margin-bottom:12px;justify-content:safe center}
+.dc{flex:0 0 auto;min-width:140px;padding:12px 16px;border-radius:20px;background:var(--gl);border:1px solid var(--bd);position:relative}
+.dc b{display:block;font-size:26px;color:var(--ac)}.dc span{display:block;font-size:12px;color:var(--mu)}
+.dc i{position:absolute;top:4px;right:10px;cursor:pointer;font-style:normal;color:var(--mu)}
+nav{display:flex;gap:4px;padding:5px;margin-bottom:12px;overflow-x:auto}
+nav button{flex:1;white-space:nowrap;border:0;background:none;padding:10px 14px;border-radius:999px;cursor:pointer;color:var(--mu);transition:background .25s,color .25s,box-shadow .25s}
+nav button.on{background:var(--gl);color:var(--tx);font-weight:700;box-shadow:0 2px 10px var(--sh),inset 0 1px 0 rgba(255,255,255,.9)}
+.card{padding:18px 20px;margin-bottom:12px}
+.card h2{margin:0 0 10px;font-size:17px}.card h3{margin:0 0 4px}.card .m{font-size:12px;color:var(--mu);margin-bottom:8px}
+.card p{white-space:pre-wrap;margin:6px 0;line-height:1.6}
+.card img{max-width:100%;border-radius:18px;margin-top:8px}
+.sc{max-height:420px;overflow-y:auto}
+.tag{display:inline-block;font-size:11px;padding:2px 10px;border-radius:999px;background:rgba(10,132,255,.14);color:var(--ac);margin-bottom:6px}
+input[type=text],input[type=date],input[type=password],input[type=number],textarea,select{width:100%;padding:10px 14px;margin:4px 0;border-radius:16px;border:1px solid var(--bd);background:var(--gl);text-align:center}
+textarea{text-align:left}
+select{cursor:pointer}
+.row{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+.tm{font-size:64px;font-weight:200;font-variant-numeric:tabular-nums;margin:10px 0}
+.em{color:var(--mu);padding:20px}
+.ic{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;vertical-align:middle;margin-right:6px;background:radial-gradient(circle at 30% 25%,#fff 0,rgba(130,200,255,.7) 45%,rgba(10,132,255,.85) 100%);box-shadow:inset 0 1px 2px #fff,0 3px 8px rgba(10,132,255,.35)}
+.ic svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.pill{display:inline-flex;align-items:center;padding:6px 14px 6px 8px;border-radius:999px;background:var(--gl);border:1px solid var(--bd)}
+.pill input{width:70px;margin:0;border:0;background:none;padding:4px}
+#ts{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;padding:10px 22px;transition:all .4s cubic-bezier(.2,.8,.2,1);pointer-events:none;z-index:9}
+#ts.on{transform:translate(-50%,0);opacity:1}
+dialog{border:1px solid var(--bd);border-radius:26px;background:var(--bg);color:var(--tx);width:min(340px,92vw);text-align:center;animation:up .3s both}
+dialog::backdrop{background:rgba(0,0,0,.25);backdrop-filter:blur(6px)}
+a{color:var(--ac)}
+.ml{padding:3px 0}.ml small{color:var(--mu);font-size:11px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="g"><h1>도담고등학교 아카이브<small>DDHS ARCHIVE</small></h1><button class="b" id="lb">학생회 로그인</button></header>
+<div class="g" id="dd"></div>
+<section class="g card" id="ml"></section>
+<section class="g card" id="nt"></section>
+<nav class="g" id="nv"></nav>
+<main id="mn"></main>
+</div>
+<div class="g" id="ts"></div>
+<dialog id="lg"><h3 style="margin-top:0">학생회 로그인</h3>
+<input type="password" id="pw" placeholder="비밀번호">
+<div class="row" style="margin-top:10px"><button class="b" onclick="lg.close()">취소</button><button class="b p" id="go">로그인</button></div></dialog>
+<script>
+/* ===== 설정: Supabase 값을 넣으면 실제 운영 모드, 비워두면 체험(데모) 모드 ===== */
+const CFG={url:'https://hlywndogyionugufneux.supabase.co',key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhseXduZG9neWlvbnVndWZuZXV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxMjA1NTksImV4cCI6MjEwNzY5NjU1OX0.bYZsdhis4uKoQ-onn8WSAlVEC_8A2C9gVwY7kYo033E',councilEmail:'25s013@dodam.hs.kr',neis:'44f1ea356b5649669afd120ead7d77df'}; // councilEmail = Supabase에 만든 학생회 계정 이메일 (화면에는 안 보임)
+const HASH='bc4d437687477ba37e3452beaacc3ed839d138a30b247dd1315ff5204762807d'; // 데모 모드 비밀번호 해시
+const DEMO=!CFG.url, MAIL='25s013@dodam.hs.kr';
+const TABS=[['books','추천도서'],['lib','학습자료실'],['timer','스터디 타이머']];
+const CATS=['인문계열','사회계열','자연계열','공학계열','의약계열','교육계열','예체능계열'];
+let S={tab:'books',posts:[],tok:null,cat:''};
+const $=s=>document.querySelector(s), esc=t=>String(t||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ls=(k,v)=>{try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}};
+const seed=[{id:1,tab:'dday',title:'10월 모의고사',body:'2026-10-20'},{id:2,tab:'dday',title:'2회고사',body:'2026-12-07~2026-12-11'}];
+const toast=m=>{const t=$('#ts');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2200)};
+async function api(p,o={}){const r=await fetch(CFG.url+'/rest/v1/'+p,{...o,headers:{apikey:CFG.key,Authorization:'Bearer '+(S.tok||CFG.key),'Content-Type':'application/json',Prefer:'return=representation'}});if(!r.ok)throw new Error(await r.text());return r.status==204?null:r.json()}
+async function load(){try{S.posts=DEMO?(ls('dg_posts2')||seed):await api('posts?order=created_at.desc')}catch(e){S.posts=[];toast('불러오기 실패: 설정을 확인하세요')}render()}
+async function save(p){if(DEMO){p.id=Date.now();p.created_at=new Date().toISOString().slice(0,10);S.posts.unshift(p);ls('dg_posts2',S.posts)}else await api('posts',{method:'POST',body:JSON.stringify(p)});await load();toast('게시되었어요')}
+async function del(id){if(!confirm('삭제할까요?'))return;if(DEMO){S.posts=S.posts.filter(p=>p.id!=id);ls('dg_posts2',S.posts)}else await api('posts?id=eq.'+id,{method:'DELETE'});await load()}
+const shrink=f=>new Promise(r=>{const fr=new FileReader();fr.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,900/i.width),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL('image/jpeg',.7))};i.src=fr.result};fr.readAsDataURL(f)});
+/* D-day: 날짜가 바뀌는 00시 정각에 자동 갱신 */
+const day0=()=>new Date(new Date().toDateString()), pd=d=>new Date(d+'T00:00:00'), fd=d=>(+d.slice(5,7))+'월 '+(+d.slice(8))+'일';
+function renderDD(){
+ const mod=!!S.tok,t=day0();
+ const ds=S.posts.filter(p=>p.tab=='dday').map(p=>{const[s,e]=p.body.split('~');return{...p,s,e:e||s}}).filter(p=>pd(p.e)>=t).sort((a,b)=>a.s<b.s?-1:1);
+ let h=ds.map(p=>{const n=Math.round((pd(p.s)-t)/864e5);const lab=n>0?'D-'+n:n==0?'D-DAY':'시험 중';return`<div class="dc">${mod?`<i onclick="del('${p.id}')">×</i>`:''}<span>${esc(p.title)}</span><b>${lab}</b><span>${fd(p.s)}${p.e!=p.s?' ~ '+fd(p.e):''}</span></div>`}).join('')||'<span class="em">등록된 시험 일정이 없어요</span>';
+ if(mod)h+=`<div class="dc fi"><input type="text" id="dn" placeholder="시험 이름"><input type="date" id="ds"><input type="date" id="de"><span>(끝나는 날: 기간일 때만)</span><button class="b p" onclick="addD()">추가</button></div>`;
+ $('#dd').innerHTML=h}
+function sched(){const n=new Date();setTimeout(()=>{renderDD();M.d=new Date();loadMeal();sched()},new Date(n.getFullYear(),n.getMonth(),n.getDate()+1)-n+300)}
+async function addD(){const n=$('#dn').value.trim(),s=$('#ds').value,e=$('#de').value;if(n&&s)await save({tab:'dday',title:n,body:e&&e>s?s+'~'+e:s})}
+/* 글 목록 / 작성 */
+const cmp=(tab,cat)=>`<div class="fi" style="margin-bottom:14px">${cat?`<select id="${tab}_c">${CATS.map(c=>`<option>${c}</option>`).join('')}<option>전 계열 공통</option></select>`:''}<input type="text" id="${tab}_t" placeholder="제목"><textarea id="${tab}_b" rows="3" placeholder="내용"></textarea><div class="row"><input type="file" id="${tab}_f" accept="image/*" style="max-width:220px"><button class="b p" onclick="post('${tab}')">게시</button></div></div>`;
+const lst=(L,mod)=>L.map(p=>`<article class="g card fi" style="margin-bottom:10px">${p.cat?`<span class="tag">${esc(p.cat)}</span>`:''}<h3>${esc(p.title)}</h3><div class="m">${esc(String(p.created_at||'').slice(0,10))}</div><p>${esc(p.body)}</p>${p.img?`<img src="${p.img}" alt="">`:''}${mod?`<br><button class="b x" onclick="del('${p.id}')">삭제</button>`:''}</article>`).join('')||'<p class="em">아직 게시글이 없어요</p>';
+async function post(tab){const t=$('#'+tab+'_t').value.trim();if(!t)return toast('제목을 입력하세요');const f=$('#'+tab+'_f').files[0],c=$('#'+tab+'_c');await save({tab,title:t,body:$('#'+tab+'_b').value,img:f?await shrink(f):null,cat:c?c.value:null})}
+function renderNT(){const mod=!!S.tok;$('#nt').innerHTML=`<h2>학생회 공지</h2>${mod?cmp('notice'):''}<div class="sc">${lst(S.posts.filter(p=>p.tab=='notice'),mod)}</div>`}
+function renderMain(){
+ $('#nv').innerHTML=TABS.map(t=>`<button class="${S.tab==t[0]?'on':''}" onclick="go('${t[0]}')">${t[1]}</button>`).join('');
+ const m=$('#mn'),mod=!!S.tok;if(S.tab=='timer')return timerView(m);
+ let h='';
+ if(S.tab=='books')h+=`<div class="g card"><h2>계열별 추천도서</h2><select onchange="S.cat=this.value;renderMain()"><option value="">전체 계열</option>${CATS.map(c=>`<option ${S.cat==c?'selected':''}>${c}</option>`).join('')}</select></div>`;
+ if(S.tab=='lib')h+=`<div class="g card"><h3>자료 제출 안내</h3><p>공유하고 싶은 학습 자료는 <a href="mailto:${MAIL}">${MAIL}</a> 로 보내주세요.\n학생회 심사 후 이곳에 게시됩니다.</p></div>`;
+ if(mod)h+=`<div class="g card">${cmp(S.tab,S.tab=='books')}</div>`;
+ let L=S.posts.filter(p=>p.tab==S.tab);if(S.tab=='books'&&S.cat)L=L.filter(p=>p.cat==S.cat||p.cat=='전 계열 공통');
+ m.innerHTML=h+lst(L,mod)}
+function go(t){S.tab=t;renderMain();const m=$('#mn');m.classList.remove('fi');void m.offsetWidth;m.classList.add('fi')}
+function render(){const b=$('#lb');b.textContent=S.tok?'로그아웃':'학생회 로그인';renderDD();renderNT();if(S.tab!='timer'||!$('#td'))renderMain()}
+/* 스터디 타이머 */
+const CLK='<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>',DROP='<svg viewBox="0 0 24 24"><path d="M12 4c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.500 2-5 5-9z"/></svg>';
+let T={sec:1500,run:0,iv:null};
+const fm=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+const tk=()=>new Date().toISOString().slice(0,10), tot=()=>(ls('dg_study')||{})[tk()]||0;
+function timerView(m){m.innerHTML=`<div class="g card"><h2>스터디 타이머</h2><div class="m">목표 시간을 직접 정해보세요</div><div class="row"><label class="pill"><span class="ic">${CLK}</span><input type="number" id="tmin" min="1" max="600" value="${Math.round(T.sec/60)}">분</label></div><div class="row" style="margin-top:8px">${[25,50,90].map(n=>`<button class="b" onclick="setT(${n})"><span class="ic">${DROP}</span>${n}분</button>`).join('')}</div><div class="tm" id="td">${fm(T.sec)}</div><div class="row"><button class="b p" onclick="tgl()" id="tb">${T.run?'일시정지':'시작'}</button><button class="b" onclick="rst()">초기화</button></div><p class="em" id="tt">오늘 공부한 시간: ${Math.floor(tot()/60)}분</p></div>`}
+function setT(n){T.sec=n*60;clearInterval(T.iv);T.iv=null;T.run=0;timerView($('#mn'))}
+function tgl(){if(T.run){clearInterval(T.iv);T.run=0}else{const n=+$('#tmin').value;if(!T.iv&&n)T.sec=n*60;T.run=1;T.iv=setInterval(()=>{T.sec--;const o=ls('dg_study')||{};o[tk()]=(o[tk()]||0)+1;ls('dg_study',o);if(T.sec<=0){clearInterval(T.iv);T.iv=null;T.run=0;alert('수고했어요! 시간이 끝났어요 🎉')}if(S.tab=='timer'&&$('#td')){$('#td').textContent=fm(Math.max(T.sec,0));$('#tt').textContent='오늘 공부한 시간: '+Math.floor(tot()/60)+'분';$('#tb').textContent=T.run?'일시정지':'시작'}},1000)}if($('#tb'))$('#tb').textContent=T.run?'일시정지':'시작'}
+function rst(){setT(+$('#tmin').value||25)}
+/* 로그인 (비밀번호만) */
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+function fade(){const b=$('#lb');b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop')}
+$('#lb').onclick=()=>{if(S.tok){S.tok=null;render();fade();toast('로그아웃 되었어요')}else{lg.showModal();$('#pw').focus()}};
+$('#pw').onkeydown=e=>{if(e.key=='Enter')$('#go').click()};
+$('#go').onclick=async()=>{try{const pw=$('#pw').value;if(DEMO){if(await sha(pw)!=HASH)return toast('비밀번호가 달라요');S.tok='demo'}else{const r=await fetch(CFG.url+'/auth/v1/token?grant_type=password',{method:'POST',headers:{apikey:CFG.key,'Content-Type':'application/json'},body:JSON.stringify({email:CFG.councilEmail,password:pw})});const j=await r.json();if(!j.access_token)return toast('비밀번호가 달라요');S.tok=j.access_token}$('#pw').value='';lg.close();render();fade();toast('학생회로 로그인 되었어요')}catch(e){toast('오류가 발생했어요')}};
+/* 급식 (나이스 교육정보 개방 포털) */
+let M={d:new Date(),rows:undefined,i:0,err:''};
+const ymd=d=>d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0'),WD=['일','월','화','수','목','금','토'];
+const nj=async p=>{try{return await(await fetch('https://open.neis.go.kr/hub/'+p+'&Type=json&KEY='+CFG.neis)).json()}catch(e){return await(await fetch('/api/neis?svc='+p.replace('?','&'))).json()}};
+async function codes(){let c=ls('dg_sch');if(c)return c;const j=await nj('schoolInfo?SCHUL_NM='+encodeURIComponent('도담고등학교')),r=j.schoolInfo&&j.schoolInfo[1].row[0];if(!r)throw new Error(j.RESULT?j.RESULT.CODE+' '+j.RESULT.MESSAGE:'학교를 찾지 못했어요');c={a:r.ATPT_OFCDC_SC_CODE,s:r.SD_SCHUL_CODE};ls('dg_sch',c);return c}
+async function loadMeal(){M.rows=undefined;M.err='';renderMeal();try{const c=await codes(),j=await nj('mealServiceDietInfo?ATPT_OFCDC_SC_CODE='+c.a+'&SD_SCHUL_CODE='+c.s+'&MLSV_YMD='+ymd(M.d));if(!j.mealServiceDietInfo&&j.RESULT&&j.RESULT.CODE!='INFO-200')throw new Error(j.RESULT.CODE+' '+j.RESULT.MESSAGE);M.rows=j.mealServiceDietInfo?j.mealServiceDietInfo[1].row:[];M.i=Math.max(0,M.rows.findIndex(r=>r.MMEAL_SC_NM=='중식'))}catch(e){M.err='급식 정보를 불러오지 못했어요 ('+(e.message||e)+')';M.rows=[]}renderMeal()}
+function mv(n){M.d=new Date(M.d.getFullYear(),M.d.getMonth(),M.d.getDate()+n);loadMeal()}
+function renderMeal(){const e=$('#ml');if(!CFG.neis){e.style.display='none';return}
+ const r=M.rows,x=r&&r[M.i],d=M.d;
+ const body=r===undefined?'<p class="em">불러오는 중…</p>':M.err?`<p class="em">${esc(M.err)}</p>`:!r.length?'<p class="em">등록된 식단이 없어요</p>':`<div class="row" style="margin:8px 0">${r.map((q,k)=>`<button class="b ${k==M.i?'p':''}" onclick="M.i=${k};renderMeal()">${esc(q.MMEAL_SC_NM)}</button>`).join('')}</div>${x.DDISH_NM.split(/<br\s*\/?>/i).map(t=>{const m=t.match(/^(.*?)\s*\(?([\d.]+)\)?\s*$/);return`<div class="ml">${esc(m?m[1]:t)}${m?` <small>${m[2]}</small>`:''}</div>`}).join('')}<div class="m" style="margin-top:8px">${esc(x.CAL_INFO||'')} · 작은 숫자는 알레르기 유발 식품 번호</div>`;
+ e.innerHTML=`<h2>급식</h2><div class="row"><button class="b" onclick="mv(-1)">‹</button><b>${d.getMonth()+1}월 ${d.getDate()}일 (${WD[d.getDay()]})</b><button class="b" onclick="mv(1)">›</button><button class="b" onclick="M.d=new Date();loadMeal()">오늘</button></div>${body}`}
+sched();load();loadMeal();
+</script>
+</body>
+</html>
